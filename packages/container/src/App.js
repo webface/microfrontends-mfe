@@ -17,6 +17,7 @@ const DashboardLazy = lazy(() => import('./components/DashboardApp'));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'co',
+  seed:"con"
 });
 
 const history = createBrowserHistory();
