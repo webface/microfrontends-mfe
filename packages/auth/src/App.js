@@ -6,7 +6,7 @@ import Signup from './components/Signup';
 
 
 const generateClassName= createGenerateClassName({
-  productionPrefix:'auth_',
+  productionPrefix:'auth',
   seed:"auth"
 
 })

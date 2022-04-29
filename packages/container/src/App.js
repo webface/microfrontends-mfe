@@ -16,7 +16,7 @@ const AuthLazy = lazy(() => import('./components/AuthApp'));
 const DashboardLazy = lazy(() => import('./components/DashboardApp'));
 
 const generateClassName = createGenerateClassName({
-  productionPrefix: 'co',
+  productionPrefix: 'con',
   seed:"con"
 });
 
@@ -31,8 +31,9 @@ export default function App() {
   }, [isSignedIn]);
 
   return (
-    <Router history={history}>
+   
       <StylesProvider generateClassName={generateClassName}>
+         <Router history={history}>
         <div>
           <Header
             signedIn={isSignedIn}
@@ -51,7 +52,7 @@ export default function App() {
             </Switch>
           </Suspense>
         </div>
+        </Router>
       </StylesProvider>
-    </Router>
-  );
+   );
 }
