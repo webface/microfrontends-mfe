@@ -6,7 +6,7 @@ import Signup from './components/Signup';
 
 
 const generateClassName= createGenerateClassName({
-  productionPrefix:'au',
+  productionPrefix:'auth_',
 })
 
 export default function App({history, onSignIn}) {
