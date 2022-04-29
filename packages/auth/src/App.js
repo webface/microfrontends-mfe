@@ -6,6 +6,7 @@ import Signup from './components/Signup';
 
 
 const generateClassName= createGenerateClassName({
+  disableGlobal: true,
   productionPrefix:'auth',
   seed:"auth"
 
